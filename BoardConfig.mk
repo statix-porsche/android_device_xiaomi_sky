@@ -184,10 +184,6 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
-# Platform
-TARGET_BOARD_PLATFORM := parrot
-BOARD_USES_QCOM_HARDWARE := true
-
 # Disable sparse on all filesystem images
 TARGET_USERIMAGES_SPARSE_EROFS_DISABLED := true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
@@ -254,8 +250,7 @@ DEVICE_MANIFEST_RAVELIN_FILES := \
     $(DEVICE_PATH)/configs/vintf/manifest_xiaomi.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
-    $(DEVICE_PATH)/configs/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    $(DEVICE_PATH)/configs/vintf/xiaomi_framework_compatibility_matrix.xml
 
 ODM_MANIFEST_SKUS += hcesim
 ODM_MANIFEST_HCESIM_FILES := $(DEVICE_PATH)/configs/vintf/manifest_hcesim.xml
