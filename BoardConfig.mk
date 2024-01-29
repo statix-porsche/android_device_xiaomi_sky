@@ -117,12 +117,6 @@ BOARD_RAMDISK_USE_LZ4 := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
-# Kill lineage kernel build task while preserving kernel
-TARGET_NO_KERNEL_OVERRIDE := true
-
-# Workaround to make lineage's soong generator work
-TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
-
 # Kernel Binary
 TARGET_KERNEL_VERSION := 5.10
 LOCAL_KERNEL := $(KERNEL_PATH)/Image
